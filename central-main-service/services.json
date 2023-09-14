@@ -2,16 +2,21 @@
     "83c52581-64c3-4c16-b3da-a826c0897c47": {
         "name": "entity",
         "port": "8003",
-        "url": "http://127.0.0.1:8003/entity"
+        "url": "http://0.0.0.0:8003/entity"
     },
     "96e3ca04-d62f-4b2b-8604-44945e7e2b4b": {
         "name": "word-count",
         "port": "8002",
-        "url": "http://127.0.0.1:8002/count"
+        "url": "http://0.0.0.0:8002/count"
     },
     "9eadbb18-8439-4b09-86f5-2f53e6dadf3a": {
         "name": "text-sentiment",
         "port": "8001",
-        "url": "http://127.0.0.1:8001/sentiment"
+        "url": "http://0.0.0.0:8001/sentiment"
+    },
+    "17325b3f-5ed1-4afe-9154-e02ce1ca2e73": {
+        "name": "test2",
+        "port": "8006",
+        "url": "/testing"
     }
 }
