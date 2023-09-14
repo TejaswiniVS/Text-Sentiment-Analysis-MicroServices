@@ -30,52 +30,51 @@ $ cd Text-Sentiment-Analysis-MicroServices
 ```
 **2. Installing the requirements:**
 
-2.1. Open your terminal and navigate to the directory where your application is located.
-     Activate virtual enviornment.
-```
-$ pipenv shell
-```
-Inside your project directory, run the following command to install dependencies from requirements.txt file:
+2.1. Open your terminal and navigate to the  directory where your application is located.
+    Inside your project directory- Text-Sentiment-Analysis-MicroServices , run the following command to install dependencies from requirements.txt file:
 ```
 $ pip install -r requirements.txt
 ```
-2.2. Go to every microservice folder and install dependencies from their respective requirements.txt file :
-        central-main-service directory
-        word-count-service directory
-        sentiment-analysis-service directory
 
 **3. Running the MicroServices:**
-We need to activate the virtual enviornment before running the microservice
+We need to activate the virtual enviornment for each microservice for it to run
 3.1. Open new terminal tab for each microservice
 3.2. Go to the directory of the microservice
 
 ```
 cd $ cd central-main-service
 ```
-3.3. Activate virtual enviornment if not active:
+3.3. Activate virtual enviornment:
 ```
 $ pipenv shell
 ```
-3.4. With the virtual environment activated, you can now run central microservice :
+3.4. Install the dependencies from requirements.txt file:
+```
+pip install -r requirements.txt
+```
+3.5. With the virtual environment activated, you can now run central microservice :
 ```
 $ python centralservice.py
 ```
-Similarly for ***Word-Count*** Service follow ***3.1 to 3.4***
+Similarly for ***Word-Count*** Service follow ***3.1 to 3.5***
 ```
 $ cd word-count-service
 $ pipenv shell
+pip install -r requirements.txt
 $ python wordcount.py
 ```
 Similarly for *****Text-Sentiment Analysis***** Service follow ***3.1 to 3.4***
 ```
 $ cd sentiment-analysis-service
 $ pipenv shell
+pip install -r requirements.txt
 $ python sentimentservice.py
 ```
 Similarly for ***Entity Recognition Service*** Service follow ***3.1 to 3.4*** :
 ```
 $ cd entity-recognition-service
 $ pipenv shell
+pip install -r requirements.txt
 $ python recognitionservice.py
 ```
 3.5. When you're done working on your project and want to exit the virtual environment, you can run:
