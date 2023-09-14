@@ -31,7 +31,11 @@ $ cd Text-Sentiment-Analysis-MicroServices
 **2. Installing the requirements:**
 
 2.1. Open your terminal and navigate to the directory where your application is located.
-     Inside your project directory, run the following command to install dependencies from requirements.txt file:
+     Activate virtual enviornment.
+```
+$ pipenv shell
+```
+Inside your project directory, run the following command to install dependencies from requirements.txt file:
 ```
 $ pip install -r requirements.txt
 ```
@@ -41,19 +45,17 @@ $ pip install -r requirements.txt
         sentiment-analysis-service directory
 
 **3. Running the MicroServices:**
-We need to activate the virtual enviornment for each microservice for it to run
+We need to activate the virtual enviornment before running the microservice
 3.1. Open new terminal tab for each microservice
 3.2. Go to the directory of the microservice
 
 ```
 cd $ cd central-main-service
 ```
-3.3. Activate the virtual enviornment
+3.3. Activate virtual enviornment if not active:
 ```
 $ pipenv shell
-```     
-Your terminal prompt should change to indicate that you are now working within the virtual environment.     
-
+```
 3.4. With the virtual environment activated, you can now run central microservice :
 ```
 $ python centralservice.py
