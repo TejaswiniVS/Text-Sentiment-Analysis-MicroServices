@@ -82,3 +82,52 @@ $ python recognitionservice.py
 Ctrl+C
 exit
 ```
+## Usage
+
+Access the application opening a POSTMAN and navigating to http://localhost:8000/services.
+All services will be listed.
+
+Based on the service name("name") we will perform the respective text analysis . 
+
+Perform text analysis tasks by sending POST requests to '/analyze' API with payload -service and text to analyze. See the API documentation below for details.
+## API Documentation:
+
+## Central MicroService
+**List Registered Services**
+Endpoint: /services
+Method: GET
+Response: JSON array containing the list of registered services
+
+**Analyze Text Services**
+
+Endpoint: /analyze
+Method: POST
+Request Body: JSON object with service name and text to analyze (service, text)
+Response: JSON response with analysis result 
+
+**Register a Service**
+Endpoint: /services
+Method: POST
+Request Body: JSON object with service details (name, port, url)
+Response: JSON response with registration status
+
+## Word-Count MicroService
+**WordCount**
+Endpoint: /count
+Method: POST
+Request Body: JSON object with text to analyze (text)
+Response: JSON response ,count of words present in text
+
+## Sentiment-Analysis MicroService
+**SentimentAnalysis**
+Endpoint: /sentiment
+Method: POST
+Request Body: JSON object with text to analyze (text)
+Response: JSON response ,analysis if the text sentiment is positive,negative,neutral
+
+## Entity Recognition MicroService
+**Recognition**
+Endpoint: /entity
+Method: POST
+Request Body: JSON object with text to analyze (text)
+Response: JSON response ,analysis if the text with classification and identification of entities
